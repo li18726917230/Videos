@@ -1,11 +1,6 @@
 import requests
 from lxml import etree
 from threading import Thread
-'''
-https://jx.eptept.com/Api.php 麒麟解析 js逆向 有水印
-https://byjx.eptept.com/?url=  直接使用 无
-https://w.dossk.com/dp/api.php 需要时间同步 无
-'''
 
 """
     爬取腾讯所有视频链接
@@ -28,7 +23,6 @@ https://v.qq.com/x/bu/pagesheet/list?_all=1&append=1&channel=variety&listpage=2&
 https://v.qq.com/x/bu/pagesheet/list?_all=1&append=1&channel=child&listpage=2&offset=30&pagesize=30&sort=18
 记录片
 https://v.qq.com/x/bu/pagesheet/list?_all=1&append=1&channel=doco&listpage=2&offset=30&pagesize=30&sort=18
-
 """
 # 19最新上架 18最近热播  16好评
 sort_list = ['19', '18', '16']
