@@ -65,5 +65,6 @@ if __name__ == '__main__':
     a = {'tv.csv': 'tv', 'movie.csv': 'movie', 'cartoon.csv': 'cartoon', 'variety.csv': 'variety', 'child.csv': 'child',
          'doco.csv': 'doco'}
     for i in a.items():
+        #创建线程池
         th = Thread(target=getdata, args=(i[0], i[1]))
         th.start()
